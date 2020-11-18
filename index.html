@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <link rel="icon" type="image/ico" href="./favicon.ico">
+        <meta property="og:title" content="Sen">
+        <meta property="og:description" content="Providing quality shitposts since forever">
+        <meta property="og:url" content="https://sen.onee.ch">
+        <meta property="og:image" content="https://sen.onee.ch/logo.png">
+        <script src="https://kit.fontawesome.com/7347a94621.js" crossorigin="anonymous"></script>
+        <link href="./main.css" type="text/css" rel="stylesheet">
+        <title>Sen</title>
+    </head>
+    <body>
+        <div id="sen">
+            Sen
+        </div>
+        <div id="text">
+            Providing quality shitposts since <span id="time"></span>
+        </div>    
+        <div id="links">
+            <a href="https://twitter.com/theonlyrealsen" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://steamcommunity.com/id/notthatthing" target="_blank"><i class="fab fa-steam"></i></a>
+            <a href="https://github.com/That-Thing" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://onee.ch" target="_blank"><span class="icon-onee"></span></a>
+        </div>
+    </body>
+    <script>
+        var num = Math.floor(Math.random() * 8) + 1;
+        document.getElementById('sen').style.background = 'url(./images/' + num + '.jpg';
+    </script>
+    <script>
+        var year = Math.floor(Math.random() * (2020-1900) + 1900 );
+        document.getElementById("time").innerHTML = year;
+    </script>
+</html>
