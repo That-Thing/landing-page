@@ -5,11 +5,15 @@ body {
 }
 @font-face {
     font-family: font;
-    src: url(./font.otf);
+    src: url(../fonts/zector.otf);
 }
 @font-face {
     font-family: onee;
-    src: url(./onee.ttf);
+    src: url(../fonts/onee.ttf);
+}
+@font-face {
+    font-family: dosis;
+    src: url(../fonts/dosis.ttf);
 }
 #sen {
     user-select: none;
@@ -41,15 +45,22 @@ body {
     
 }
 a {
+    color: rgb(44 69 160);
     text-decoration: none;
+    transition: font-size .3s;
 }
-i {
+a:hover {
+    color: rgb(32 53 129);
+    font-size: 105%;
+}
+
+.link-icon {
     padding: 10px;
     color: #2d2d2d;
     font-size: 100px;
     transition: transform .2s;
 }
-i:hover {
+.link-icon:hover {
     transform: scale(1.3);
 }
 .icon-onee {
@@ -70,4 +81,30 @@ i:hover {
     font-size: 20px;
     text-align: center;
     color: black;
+	font-family: dosis;
+}
+::-webkit-scrollbar {
+    width: 15px;
+    height: 7px;
+}
+::-webkit-scrollbar-thumb {
+    background: #7c7c7c;
+    border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #adadad;
+}
+::-webkit-scrollbar-track {
+    background: #dfdfdf;
+}
+h1, h2, h3, h4 {
+	font-family: font;
+}
+#cat {
+	display: inline-block;
+    letter-spacing: 0;
+    line-height: 1.4;
+    font-family: 'Consolas','BitstreamVeraSansMono','CourierNew',Courier,monospace;
+    font-size: 12px;
+    white-space: pre;
 }

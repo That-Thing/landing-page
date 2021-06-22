@@ -1,17 +1,17 @@
 <html>
     <head>
-        <link rel="icon" type="image/ico" href="./favicon.ico">
+        <link rel="icon" type="image/ico" href="./images/favicon.ico">
         <meta property="og:title" content="Sen - About">
         <meta property="og:description" content="About Sen. ">
-        <meta property="og:url" content="https://sen.onee.ch/about.html">
-        <meta property="og:image" content="https://sen.onee.ch/logo.png">
+        <meta property="og:url" content="https://sen.onee.ch/about">
+        <meta property="og:image" content="https://sen.onee.ch/images/logo.png">
         <script src="https://kit.fontawesome.com/7347a94621.js" crossorigin="anonymous"></script>
-        <link href="./main.css" type="text/css" rel="stylesheet">
+        <link href="./css/main.css" type="text/css" rel="stylesheet">
         <title>Sen - About</title>
     </head>
     <body>
         <div id="sen">
-            <a href="./index.html" class="senTitle">Sen</a>
+            <a href="./" class="senTitle">Sen</a>
         </div>
         <div class="textBox" id="about">
             <h2>About</h2>
@@ -29,9 +29,27 @@
                 and more...
             </p>
         </div>
+        <div class="textBox" id="projects">
+            <h2>My Current Projects</h2>
+            <a href="https://onee.ch" target="_blank">Onee Chan</a><br>
+			<a href="https://neko.airforce" target="_blank">Neko Airforce</a><br>
+			<a href="https://pleroma.neko.airforce" target="_blank">Pleroma Instance</a><br>
+			<a href="https://img.neko.airforce" target="_blank">Pomf Clone (filehost)</a><br>
+			<a href="https://paste.neko.airforce" target="_blank">Paste Service</a><br>
+			<a href="https://api.neko.airforce/api/endpoints" target="_blank">API for Stuff</a><br>
+        </div>
+		<div class="textBox" id="extra-links">
+			<h2>Extra Links</h2>
+			<a href="https://www.last.fm/user/Sen00" target="_blank"><i class="fab fa-lastfm"></i> Last.fm</a><br>
+		</div>
+		<div class="textBox" id="contact">
+			<h2>Contact</h2>
+			<a href="mailto:sen@onee.ch"><i class="far fa-envelope"></i> email</a><br>
+			<a href="https://discord.com/users/204721061411946496" target="_blank"><i class="fab fa-discord"></i> Discord</p>
+		</div>
     </body>
     <script>
         var num = Math.floor(Math.random() * 8) + 1;
-        document.getElementById('sen').style.background = 'url(./images/' + num + '.jpg';
+        document.getElementById('sen').style.background = 'url(./images/backgrounds/' + num + '.jpg';
     </script>
 </html>
